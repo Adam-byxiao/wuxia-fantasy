@@ -9,96 +9,100 @@ var enemies: Array[CombatUnit]
 @onready var attack_button: Button = $VBox/AttackButton
 @onready var escape_button: Button = $VBox/EscapeButton
 
-func _ready():
-    battle_log.text = "点击\"开始战斗\"按钮启动测试\n"
-    attack_button.disabled = true
-    escape_button.disabled = true
+func _ready() -> void:
+	battle_log.text = "Click Start Battle to begin the combat test.\n"
+	attack_button.disabled = true
+	escape_button.disabled = true
 
-    # 连接信号
-    if SignalBus:
-        SignalBus.battle_ended.connect(_on_battle_ended)
+	if SignalBus:
+		SignalBus.battle_ended.connect(_on_battle_ended)
 
-func _test_battle():
-    battle_manager = BattleManager.new()
-    add_child(battle_manager)
+func _test_battle() -> void:
+	battle_manager = BattleManager.new()
+	add_child(battle_manager)
 
-    # 连接 BattleManager 信号
-    battle_manager.battle_started.connect(_on_battle_started)
-    battle_manager.battle_ended.connect(_on_battle_ended_internal)
-    battle_manager.turn_started.connect(_on_turn_started)
-    battle_manager.action_executed.connect(_on_action_executed)
+	battle_manager.battle_started.connect(_on_battle_started)
+	battle_manager.battle_ended.connect(_on_battle_ended_internal)
+	battle_manager.turn_started.connect(_on_turn_started)
+	battle_manager.action_executed.connect(_on_action_executed)
 
-    # 创建玩家
-    player = CombatUnit.new("玩家", 100, 15, 5, 12, 50)
+	player = CombatUnit.new("Player", 100, 15, 5, 12, 50)
 
-    # 创建敌人
-    var e1 = EnemyTemplates.create_bandit(2)
-    var e2 = EnemyTemplates.create_bandit(1)
-    enemies = [e1, e2]
+	var enemy_a = EnemyTemplates.create_bandit(2)
+	var enemy_b = EnemyTemplates.create_bandit(1)
+	enemies = [enemy_a, enemy_b]
 
-    # 开始战斗
-    battle_manager.start_battle(player, enemies)
+	battle_manager.start_battle(player, enemies)
 
-    attack_button.disabled = false
-    escape_button.disabled = false
-    start_button.disabled = true
+	attack_button.disabled = false
+	escape_button.disabled = false
+	start_button.disabled = true
 
-func _on_start_pressed():
-    _test_battle()
+func _on_start_pressed() -> void:
+	_test_battle()
 
-func _on_attack_pressed():
-    if battle_manager and battle_manager.state == BattleManager.BattleState.PLAYER_TURN:
-        # 攻击第一个活着的敌人
-        var target_index = -1
-        for i in range(enemies.size()):
-            if enemies[i].is_alive:
-                target_index = i
-                break
+func _on_attack_pressed() -> void:
+	if battle_manager and battle_manager.state == BattleManager.BattleState.PLAYER_TURN:
+		var target_index := -1
+		for i in range(enemies.size()):
+			if enemies[i].is_alive:
+				target_index = i
+				break
 
-        if target_index >= 0:
-            var result = battle_manager.execute_player_attack(target_index)
-            _update_log(result["message"])
+		if target_index >= 0:
+			var result = battle_manager.execute_player_attack(target_index)
+			_update_log(result.get("message", ""))
 
-func _on_escape_pressed():
-    if battle_manager and battle_manager.try_escape():
-        _update_log("逃跑成功！")
-        _end_test()
-    else:
-        _update_log("逃跑失败！")
+func _on_escape_pressed() -> void:
+	if battle_manager == null:
+		return
 
-func _on_battle_started():
-    _update_log("=== 战斗开始 ===")
+	var result = battle_manager.try_escape()
+	_update_log(result.get("message", ""))
+	if result.get("escaped", false):
+		_end_test()
 
-func _on_battle_ended_internal(victory: bool, rewards: Dictionary):
-    if victory:
-        _update_log("=== 战斗胜利！ ===")
-        _update_log("获得经验: %d" % rewards.get("exp", 0))
-        _update_log("获得金币: %d" % rewards.get("gold", 0))
-        if SignalBus:
-            SignalBus.exp_gained.emit(rewards.get("exp", 0))
-    else:
-        _update_log("=== 战斗失败 ===")
-    _end_test()
+func _on_battle_started() -> void:
+	_update_log("=== Battle Started ===")
 
-func _on_turn_started(is_player_turn: bool):
-    if is_player_turn:
-        _update_log("--- 玩家回合 ---")
-    else:
-        _update_log("--- 敌人回合 ---")
+func _on_battle_ended(victory: bool, rewards: Dictionary) -> void:
+	_update_log("[SignalBus] Battle ended. Victory=%s, EXP=%d, Gold=%d" % [
+		str(victory),
+		rewards.get("exp", 0),
+		rewards.get("gold", 0)
+	])
 
-func _on_action_executed(actor_name: String, result: Dictionary):
-    _update_log(result.get("message", ""))
+func _on_battle_ended_internal(victory: bool, rewards: Dictionary) -> void:
+	if victory:
+		_update_log("=== Victory ===")
+		_update_log("EXP: %d" % rewards.get("exp", 0))
+		_update_log("Gold: %d" % rewards.get("gold", 0))
+		if SignalBus:
+			SignalBus.exp_gained.emit(rewards.get("exp", 0))
+	else:
+		_update_log("=== Defeat ===")
+	_end_test()
 
-func _update_log(msg: String):
-    battle_log.append_text("\n" + msg)
-    # 自动滚动到底部
-    battle_log.scroll_to_line(battle_log.get_line_count() - 1)
+func _on_turn_started(is_player_turn: bool) -> void:
+	if is_player_turn:
+		_update_log("--- Player Turn ---")
+	else:
+		_update_log("--- Enemy Turn ---")
 
-func _end_test():
-    attack_button.disabled = true
-    escape_button.disabled = true
-    start_button.disabled = false
+func _on_action_executed(_actor_name: String, result: Dictionary) -> void:
+	_update_log(result.get("message", ""))
 
-    if battle_manager:
-        battle_manager.queue_free()
-        battle_manager = null
+func _update_log(message: String) -> void:
+	if message == "":
+		return
+	battle_log.append_text("\n" + message)
+	battle_log.scroll_to_line(battle_log.get_line_count() - 1)
+
+func _end_test() -> void:
+	attack_button.disabled = true
+	escape_button.disabled = true
+	start_button.disabled = false
+
+	if battle_manager:
+		battle_manager.queue_free()
+		battle_manager = null

@@ -3,102 +3,107 @@
 [ext_resource type="Script" path="res://scenes/ui/town_scene.gd" id="1"]
 
 [node name="TownScene" type="Control"]
-script = ExtResource("1")
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1")
 
 [node name="BG" type="ColorRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-color = Color(0.1, 0.15, 0.1, 1)
+color = Color(0.11, 0.15, 0.11, 1)
 
-[node name="Title" type="Label" parent="."]
+[node name="RootMargin" type="MarginContainer" parent="."]
 layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -100.0
-offset_top = 20.0
-offset_right = 100.0
-offset_bottom = 60.0
-grow_horizontal = 2
-text = "平安镇"
-horizontal_alignment = 1
-
-[node name="LocationGrid" type="GridContainer" parent="."]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -200.0
-offset_top = -150.0
-offset_right = 200.0
-offset_bottom = 150.0
-grow_horizontal = 2
-grow_vertical = 2
-columns = 2
-theme_override_constants/h_separation = 50
-theme_override_constants/v_separation = 30
-
-[node name="InnBtn" type="Button" parent="LocationGrid"]
-custom_minimum_size = Vector2(150, 80)
-layout_mode = 2
-text = "客栈"
-
-[node name="TradeGuildBtn" type="Button" parent="LocationGrid"]
-custom_minimum_size = Vector2(150, 80)
-layout_mode = 2
-text = "商会"
-
-[node name="SectBtn" type="Button" parent="LocationGrid"]
-custom_minimum_size = Vector2(150, 80)
-layout_mode = 2
-text = "宗门"
-
-[node name="TrainGroundBtn" type="Button" parent="LocationGrid"]
-custom_minimum_size = Vector2(150, 80)
-layout_mode = 2
-text = "演武场"
-
-[node name="BottomBar" type="HBoxContainer" parent="."]
-layout_mode = 1
-anchors_preset = 12
-anchor_top = 1.0
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -60.0
-grow_horizontal = 2
-grow_vertical = 0
-theme_override_constants/separation = 20
+offset_left = 48.0
+offset_top = 36.0
+offset_right = -48.0
+offset_bottom = -28.0
 
-[node name="InventoryBtn" type="Button" parent="BottomBar"]
+[node name="MainVBox" type="VBoxContainer" parent="RootMargin"]
 layout_mode = 2
-text = "背包 (I)"
+size_flags_vertical = 3
+theme_override_constants/separation = 24
 
-[node name="CharacterBtn" type="Button" parent="BottomBar"]
+[node name="HeaderCard" type="PanelContainer" parent="RootMargin/MainVBox"]
 layout_mode = 2
-text = "人物 (C)"
+custom_minimum_size = Vector2(0, 110)
 
-[node name="QuestBtn" type="Button" parent="BottomBar"]
+[node name="HeaderBox" type="VBoxContainer" parent="RootMargin/MainVBox/HeaderCard"]
 layout_mode = 2
-text = "任务 (Q)"
+theme_override_constants/separation = 8
 
-[node name="Spacer" type="Control" parent="BottomBar"]
+[node name="Title" type="Label" parent="RootMargin/MainVBox/HeaderCard/HeaderBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 34
+
+[node name="Subtitle" type="Label" parent="RootMargin/MainVBox/HeaderCard/HeaderBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+
+[node name="ContentCard" type="PanelContainer" parent="RootMargin/MainVBox"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="LocationGrid" type="GridContainer" parent="RootMargin/MainVBox/ContentCard"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+columns = 2
+theme_override_constants/h_separation = 28
+theme_override_constants/v_separation = 28
+
+[node name="InnBtn" type="Button" parent="RootMargin/MainVBox/ContentCard/LocationGrid"]
+custom_minimum_size = Vector2(280, 120)
+layout_mode = 2
+
+[node name="TradeGuildBtn" type="Button" parent="RootMargin/MainVBox/ContentCard/LocationGrid"]
+custom_minimum_size = Vector2(280, 120)
+layout_mode = 2
+
+[node name="SectBtn" type="Button" parent="RootMargin/MainVBox/ContentCard/LocationGrid"]
+custom_minimum_size = Vector2(280, 120)
+layout_mode = 2
+
+[node name="TrainGroundBtn" type="Button" parent="RootMargin/MainVBox/ContentCard/LocationGrid"]
+custom_minimum_size = Vector2(280, 120)
+layout_mode = 2
+
+[node name="BottomBar" type="HBoxContainer" parent="RootMargin/MainVBox"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 56)
+theme_override_constants/separation = 16
+
+[node name="InventoryBtn" type="Button" parent="RootMargin/MainVBox/BottomBar"]
+custom_minimum_size = Vector2(120, 44)
+layout_mode = 2
+
+[node name="CharacterBtn" type="Button" parent="RootMargin/MainVBox/BottomBar"]
+custom_minimum_size = Vector2(120, 44)
+layout_mode = 2
+
+[node name="QuestBtn" type="Button" parent="RootMargin/MainVBox/BottomBar"]
+custom_minimum_size = Vector2(120, 44)
+layout_mode = 2
+
+[node name="Spacer" type="Control" parent="RootMargin/MainVBox/BottomBar"]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="InfoLabel" type="Label" parent="BottomBar"]
+[node name="InfoLabel" type="Label" parent="RootMargin/MainVBox/BottomBar"]
 layout_mode = 2
-text = "日期: 第1天 (春)"
+size_flags_horizontal = 3
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="LeaveBtn" type="Button" parent="BottomBar"]
+[node name="LeaveBtn" type="Button" parent="RootMargin/MainVBox/BottomBar"]
+custom_minimum_size = Vector2(160, 44)
 layout_mode = 2
-text = "离开城镇"

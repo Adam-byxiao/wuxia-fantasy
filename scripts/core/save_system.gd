@@ -3,16 +3,16 @@ extends Node
 const SAVE_PATH = "user://save_game.json"
 
 func save_game() -> bool:
-	# 收集存档数据
 	var save_data = {
-		"version": "0.1.0",
+		"version": "0.2.0",
 		"current_day": GameState.current_day,
 		"current_season": GameState.current_season,
 		"current_region_id": GameState.current_region_id,
+		"current_location_id": GameState.current_location_id,
+		"current_location_type": GameState.current_location_type,
+		"current_submap_scene": GameState.current_submap_scene
 	}
-	# TODO: 添加玩家数据、背包、武学等
 
-	# 写入文件
 	var json_str = JSON.stringify(save_data, "\t")
 	var file = FileAccess.open(SAVE_PATH, FileAccess.WRITE)
 	if file:
@@ -36,6 +36,9 @@ func load_game() -> bool:
 			GameState.current_day = data.get("current_day", 1)
 			GameState.current_season = data.get("current_season", "春")
 			GameState.current_region_id = data.get("current_region_id", "")
+			GameState.current_location_id = data.get("current_location_id", "")
+			GameState.current_location_type = data.get("current_location_type", "")
+			GameState.current_submap_scene = data.get("current_submap_scene", "")
 			SignalBus.game_loaded.emit()
 			return true
 	return false
