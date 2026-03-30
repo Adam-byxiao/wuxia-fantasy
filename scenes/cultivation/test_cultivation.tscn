@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://testcult001"]
+
+[ext_resource type="Script" path="res://scripts/cultivation/cultivation_system.gd" id="1_cult"]
+
+[node name="TestCultivation" type="Node2D"]
+
+[node name="CultivationSystem" type="Node" parent="."]
+script = ExtResource("1_cult")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 500.0
+offset_bottom = 60.0
+text = "Cultivation Test - Check console output after running"

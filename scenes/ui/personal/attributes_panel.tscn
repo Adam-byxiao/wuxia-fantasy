@@ -1,0 +1,172 @@
+[gd_scene format=3]
+
+[node name="AttributesPanel" type="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="BasicInfo" type="HBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 30
+
+[node name="LeftInfo" type="VBoxContainer" parent="BasicInfo"]
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="LevelLabel" type="Label" parent="BasicInfo/LeftInfo"]
+layout_mode = 2
+text = "等级: 1"
+
+[node name="ExpLabel" type="Label" parent="BasicInfo/LeftInfo"]
+layout_mode = 2
+text = "经验: 0 / 100"
+
+[node name="ExpBar" type="ProgressBar" parent="BasicInfo/LeftInfo"]
+layout_mode = 2
+
+[node name="RealmLabel" type="Label" parent="BasicInfo/LeftInfo"]
+layout_mode = 2
+text = "境界: 后天"
+
+[node name="RealmProgress" type="ProgressBar" parent="BasicInfo/LeftInfo"]
+layout_mode = 2
+
+[node name="RightInfo" type="VBoxContainer" parent="BasicInfo"]
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="GoldLabel" type="Label" parent="BasicInfo/RightInfo"]
+layout_mode = 2
+text = "金币: 0"
+
+[node name="RepLabel" type="Label" parent="BasicInfo/RightInfo"]
+layout_mode = 2
+text = "声望: 0"
+
+[node name="Separator" type="HSeparator" parent="."]
+layout_mode = 2
+
+[node name="CombatAttrs" type="HBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="LeftAttrs" type="VBoxContainer" parent="CombatAttrs"]
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="HP" type="Label" parent="CombatAttrs/LeftAttrs"]
+layout_mode = 2
+text = "生命: 100 / 100"
+
+[node name="Qi" type="Label" parent="CombatAttrs/LeftAttrs"]
+layout_mode = 2
+text = "内力: 50 / 50"
+
+[node name="ATK" type="Label" parent="CombatAttrs/LeftAttrs"]
+layout_mode = 2
+text = "攻击: 10"
+
+[node name="DEF" type="Label" parent="CombatAttrs/LeftAttrs"]
+layout_mode = 2
+text = "防御: 5"
+
+[node name="SPD" type="Label" parent="CombatAttrs/LeftAttrs"]
+layout_mode = 2
+text = "速度: 8"
+
+[node name="CRI" type="Label" parent="CombatAttrs/LeftAttrs"]
+layout_mode = 2
+text = "暴击: 5%"
+
+[node name="RightAttrs" type="VBoxContainer" parent="CombatAttrs"]
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="AttrTitle" type="Label" parent="CombatAttrs/RightAttrs"]
+layout_mode = 2
+text = "六维属性"
+
+[node name="Str" type="Label" parent="CombatAttrs/RightAttrs"]
+layout_mode = 2
+text = "力道: 5"
+
+[node name="Agi" type="Label" parent="CombatAttrs/RightAttrs"]
+layout_mode = 2
+text = "身法: 5"
+
+[node name="Con" type="Label" parent="CombatAttrs/RightAttrs"]
+layout_mode = 2
+text = "体质: 5"
+
+[node name="QiCap" type="Label" parent="CombatAttrs/RightAttrs"]
+layout_mode = 2
+text = "气量: 5"
+
+[node name="Wis" type="Label" parent="CombatAttrs/RightAttrs"]
+layout_mode = 2
+text = "悟性: 5"
+
+[node name="Cha" type="Label" parent="CombatAttrs/RightAttrs"]
+layout_mode = 2
+text = "魅力: 5"
+
+[node name="EquipSeparator" type="HSeparator" parent="."]
+layout_mode = 2
+
+[node name="EquipSection" type="HBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="EquipTitle" type="Label" parent="EquipSection"]
+layout_mode = 2
+text = "装备栏"
+
+[node name="WeaponSlot" type="PanelContainer" parent="EquipSection"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+
+[node name="VBox" type="VBoxContainer" parent="EquipSection/WeaponSlot"]
+layout_mode = 2
+
+[node name="WeaponName" type="Label" parent="EquipSection/WeaponSlot/VBox"]
+layout_mode = 2
+text = "武器"
+horizontal_alignment = 1
+
+[node name="WeaponStat" type="Label" parent="EquipSection/WeaponSlot/VBox"]
+layout_mode = 2
+text = "无"
+horizontal_alignment = 1
+
+[node name="ArmorSlot" type="PanelContainer" parent="EquipSection"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+
+[node name="VBox" type="VBoxContainer" parent="EquipSection/ArmorSlot"]
+layout_mode = 2
+
+[node name="ArmorName" type="Label" parent="EquipSection/ArmorSlot/VBox"]
+layout_mode = 2
+text = "防具"
+horizontal_alignment = 1
+
+[node name="ArmorStat" type="Label" parent="EquipSection/ArmorSlot/VBox"]
+layout_mode = 2
+text = "无"
+horizontal_alignment = 1
+
+[node name="AccessorySlot" type="PanelContainer" parent="EquipSection"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+
+[node name="VBox" type="VBoxContainer" parent="EquipSection/AccessorySlot"]
+layout_mode = 2
+
+[node name="AccessoryName" type="Label" parent="EquipSection/AccessorySlot/VBox"]
+layout_mode = 2
+text = "饰品"
+horizontal_alignment = 1
+
+[node name="AccessoryStat" type="Label" parent="EquipSection/AccessorySlot/VBox"]
+layout_mode = 2
+text = "无"
+horizontal_alignment = 1

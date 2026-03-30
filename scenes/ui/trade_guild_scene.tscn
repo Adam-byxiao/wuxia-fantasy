@@ -1,0 +1,89 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scenes/ui/trade_guild_scene.gd" id="1"]
+
+[node name="TradeGuildScene" type="PanelContainer"]
+script = ExtResource("1")
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 400.0
+grow_horizontal = 2
+
+[node name="Margin" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBox" type="VBoxContainer" parent="Margin"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="TitleBar" type="HBoxContainer" parent="Margin/VBox"]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="Margin/VBox/TitleBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "商会"
+
+[node name="GoldLabel" type="Label" parent="Margin/VBox/TitleBar"]
+layout_mode = 2
+text = "金币: 0"
+
+[node name="Content" type="HBoxContainer" parent="Margin/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 20
+
+[node name="BuyPanel" type="VBoxContainer" parent="Margin/VBox/Content"]
+custom_minimum_size = Vector2(350, 0)
+layout_mode = 2
+size_flags_horizontal = 2
+theme_override_constants/separation = 10
+
+[node name="BuyTitle" type="Label" parent="Margin/VBox/Content/BuyPanel"]
+layout_mode = 2
+text = "商品列表"
+
+[node name="BuyList" type="ScrollContainer" parent="Margin/VBox/Content/BuyPanel"]
+custom_minimum_size = Vector2(0, 250)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="BuyListVBox" type="VBoxContainer" parent="Margin/VBox/Content/BuyPanel/BuyList"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 5
+
+[node name="SellPanel" type="VBoxContainer" parent="Margin/VBox/Content"]
+layout_mode = 2
+size_flags_horizontal = 2
+theme_override_constants/separation = 10
+
+[node name="SellTitle" type="Label" parent="Margin/VBox/Content/SellPanel"]
+layout_mode = 2
+text = "出售物品"
+
+[node name="SellList" type="ScrollContainer" parent="Margin/VBox/Content/SellPanel"]
+custom_minimum_size = Vector2(0, 250)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="SellListVBox" type="VBoxContainer" parent="Margin/VBox/Content/SellPanel/SellList"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 5
+
+[node name="BottomBar" type="HBoxContainer" parent="Margin/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Spacer" type="Control" parent="Margin/VBox/BottomBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="LeaveBtn" type="Button" parent="Margin/VBox/BottomBar"]
+layout_mode = 2
+text = "离开"

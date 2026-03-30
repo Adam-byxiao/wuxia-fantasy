@@ -1,0 +1,1249 @@
+{
+  "meta": {
+    "name": "武学数据库v4.0",
+    "version": "4.0",
+    "total": 97
+  },
+  "tiers": {
+    "SS": "绝世",
+    "S": "超绝",
+    "A": "一流",
+    "B": "上品",
+    "C": "中品",
+    "D": "下品"
+  },
+  "types": {
+    "neiqi": "内功",
+    "sword": "剑法",
+    "saber": "刀法",
+    "palm": "掌法",
+    "fist": "拳法",
+    "finger": "指法",
+    "staff": "棍棒",
+    "leg": "腿法",
+    "throwing": "暗器",
+    "light": "轻功",
+    "defense": "护体",
+    "special": "特殊"
+  },
+  "arts": [
+    {
+      "id": "jiuyin_zhenjing",
+      "name": "九阴真经",
+      "type": "neiqi",
+      "tier": "SS",
+      "score": 98,
+      "source": "射雕英雄传",
+      "desc": "武学至高宝典，含九阴神爪、白蟒鞭法等绝学。",
+      "tech": [
+        "九阴神爪",
+        "白蟒鞭法",
+        "摧心掌",
+        "九阴白骨爪",
+        "螺旋九影"
+      ]
+    },
+    {
+      "id": "jiuyang_shenong",
+      "name": "九阳神功",
+      "type": "neiqi",
+      "tier": "SS",
+      "score": 97,
+      "source": "倚天屠龙记",
+      "desc": "内力自生速度奇快，普通拳脚亦能伤人。",
+      "tech": [
+        "九阳真气",
+        "金刚伏魔"
+      ]
+    },
+    {
+      "id": "dugu_jiujian",
+      "name": "独孤九剑",
+      "type": "sword",
+      "tier": "SS",
+      "score": 98,
+      "source": "笑傲江湖",
+      "desc": "剑魔独孤求败所创，集天下剑法之大成。",
+      "tech": [
+        "总诀式",
+        "破剑式",
+        "破刀式",
+        "破枪式",
+        "破鞭式",
+        "破掌式",
+        "破箭式",
+        "破气式"
+      ]
+    },
+    {
+      "id": "kuihua_baodian",
+      "name": "葵花宝典",
+      "type": "neiqi",
+      "tier": "SS",
+      "score": 96,
+      "source": "笑傲江湖",
+      "desc": "欲练此功必先自宫，修后极速身法诡异剑法。",
+      "tech": [
+        "葵花神功",
+        "金针度劫",
+        "鬼影迷踪"
+      ]
+    },
+    {
+      "id": "beiming_shenong",
+      "name": "北冥神功",
+      "type": "neiqi",
+      "tier": "SS",
+      "score": 97,
+      "source": "天龙八部",
+      "desc": "逍遥派至高内功，可吸取他人内力。",
+      "tech": [
+        "北冥真气",
+        "吸星大法",
+        "化功大法"
+      ]
+    },
+    {
+      "id": "yijin_jing",
+      "name": "易筋经",
+      "type": "neiqi",
+      "tier": "S",
+      "score": 92,
+      "source": "少林寺",
+      "desc": "少林七十二绝技之首，可易筋换骨。",
+      "tech": [
+        "易筋真气",
+        "易筋换骨"
+      ]
+    },
+    {
+      "id": "xisui_jing",
+      "name": "洗髓经",
+      "type": "neiqi",
+      "tier": "S",
+      "score": 91,
+      "source": "少林寺",
+      "desc": "与易筋经并称，可洗涤骨髓、伐毛换髓。",
+      "tech": [
+        "洗髓真气",
+        "伐毛换髓"
+      ]
+    },
+    {
+      "id": "taiji_quan",
+      "name": "太极拳",
+      "type": "palm",
+      "tier": "S",
+      "score": 90,
+      "source": "武当派",
+      "desc": "张三丰所创，以柔克刚、借力打力。",
+      "tech": [
+        "懒扎衣",
+        "单鞭",
+        "白鹤亮翅",
+        "搂膝拗步",
+        "手挥琵琶",
+        "如封似闭"
+      ]
+    },
+    {
+      "id": "taiji_sword",
+      "name": "太极剑",
+      "type": "sword",
+      "tier": "S",
+      "score": 90,
+      "source": "武当派",
+      "desc": "武当剑法，圆转如意、生生不息。",
+      "tech": [
+        "太极剑"
+      ]
+    },
+    {
+      "id": "qiankun_danuo",
+      "name": "乾坤大挪移",
+      "type": "neiqi",
+      "tier": "S",
+      "score": 91,
+      "source": "明教",
+      "desc": "明教镇教之宝，可牵引挪移敌方攻势。",
+      "tech": [
+        "乾坤挪移",
+        "斗转星移"
+      ]
+    },
+    {
+      "id": "long_zhang",
+      "name": "降龙十八掌",
+      "type": "palm",
+      "tier": "S",
+      "score": 93,
+      "source": "丐帮",
+      "desc": "天下第一刚猛掌法，招式简明威力无匹。",
+      "tech": [
+        "亢龙有悔",
+        "飞龙在天",
+        "见龙在田",
+        "潜龙勿用",
+        "龙战于野",
+        "神龙摆尾",
+        "或跃在渊"
+      ]
+    },
+    {
+      "id": "sixiang_bu",
+      "name": "凌波微步",
+      "type": "light",
+      "tier": "S",
+      "score": 92,
+      "source": "逍遥派",
+      "desc": "以易经六十四卦为基础的绝世轻功。",
+      "tech": [
+        "凌波微步"
+      ]
+    },
+    {
+      "id": "liumai_shenjian",
+      "name": "六脉神剑",
+      "type": "finger",
+      "tier": "S",
+      "score": 94,
+      "source": "大理段氏",
+      "desc": "大理段氏至高武学，六脉剑气化为无形剑招。",
+      "tech": [
+        "少商剑",
+        "商阳剑",
+        "中冲剑",
+        "关冲剑",
+        "少冲剑",
+        "少泽剑"
+      ]
+    },
+    {
+      "id": "tianshan_liuyang",
+      "name": "天山六阳掌",
+      "type": "palm",
+      "tier": "S",
+      "score": 90,
+      "source": "逍遥派",
+      "desc": "逍遥派绝学，掌法暗附阴阳之力。",
+      "tech": [
+        "阳春白雪",
+        "阳关三叠",
+        "飞絮拈花",
+        "生死符"
+      ]
+    },
+    {
+      "id": "tianshan_zhehua",
+      "name": "天山折梅手",
+      "type": "palm",
+      "tier": "S",
+      "score": 90,
+      "source": "逍遥派",
+      "desc": "逍遥派绝学，可化解天下任何招式。",
+      "tech": [
+        "折梅三式"
+      ]
+    },
+    {
+      "id": "anran_xiaohun",
+      "name": "黯然销魂掌",
+      "type": "palm",
+      "tier": "S",
+      "score": 90,
+      "source": "神雕侠侣",
+      "desc": "杨过所创，以消沉悲伤之意催动。",
+      "tech": [
+        "六神不安",
+        "心惊肉跳",
+        "杞人忧天",
+        "无中生有",
+        "呆若木鸡",
+        "行尸走肉"
+      ]
+    },
+    {
+      "id": "bixie_jian",
+      "name": "辟邪剑法",
+      "type": "sword",
+      "tier": "S",
+      "score": 91,
+      "source": "葵花宝典",
+      "desc": "由葵花宝典残篇所创，欲练必先自宫。",
+      "tech": [
+        "辟邪剑法七十二式"
+      ]
+    },
+    {
+      "id": "shuangxi_hubo",
+      "name": "双手互搏",
+      "type": "special",
+      "tier": "S",
+      "score": 88,
+      "source": "周伯通",
+      "desc": "周伯通自创，可双手同时施展不同招式。",
+      "tech": [
+        "双手互搏"
+      ]
+    },
+    {
+      "id": "xiaowu_xiang",
+      "name": "小无相功",
+      "type": "neiqi",
+      "tier": "S",
+      "score": 88,
+      "source": "逍遥派",
+      "desc": "逍遥派绝学，可催动天下武功。",
+      "tech": [
+        "小无相真气"
+      ]
+    },
+    {
+      "id": "bahuang_liuyang",
+      "name": "八荒六合唯我独尊功",
+      "type": "neiqi",
+      "tier": "S",
+      "score": 89,
+      "source": "天山童姥",
+      "desc": "天山童姥绝学，每三十年返老还童一次。",
+      "tech": [
+        "八荒真气"
+      ]
+    },
+    {
+      "id": "shenghuo_ling",
+      "name": "圣火令神功",
+      "type": "special",
+      "tier": "S",
+      "score": 89,
+      "source": "明教",
+      "desc": "源自波斯，身法诡异、招式奇特。",
+      "tech": [
+        "圣火令招式"
+      ]
+    },
+    {
+      "id": "yiyang_zhi",
+      "name": "一阳指",
+      "type": "finger",
+      "tier": "A",
+      "score": 86,
+      "source": "大理段氏",
+      "desc": "大理段氏绝世指法，点穴功夫天下一绝。",
+      "tech": [
+        "一阳指"
+      ]
+    },
+    {
+      "id": "tanzhi_shentong",
+      "name": "弹指神通",
+      "type": "finger",
+      "tier": "A",
+      "score": 85,
+      "source": "桃花岛",
+      "desc": "桃花岛主黄药师所创，指力可弹落飞箭。",
+      "tech": [
+        "弹指"
+      ]
+    },
+    {
+      "id": "kongming_quan",
+      "name": "空明拳",
+      "type": "fist",
+      "tier": "A",
+      "score": 84,
+      "source": "周伯通",
+      "desc": "周伯通困于桃花岛时所创，十六字诀。",
+      "tech": [
+        "空明十六字诀"
+      ]
+    },
+    {
+      "id": "mianxin_jing",
+      "name": "玉女心经",
+      "type": "neiqi",
+      "tier": "A",
+      "score": 86,
+      "source": "古墓派",
+      "desc": "古墓派最高武学，需二人合修方能大成。",
+      "tech": [
+        "玉女剑法",
+        "玉女素心剑"
+      ]
+    },
+    {
+      "id": "yunu_jian",
+      "name": "玉女剑法",
+      "type": "sword",
+      "tier": "A",
+      "score": 85,
+      "source": "古墓派",
+      "desc": "古墓派剑法，轻灵飘逸，以柔克刚。",
+      "tech": [
+        "玉女剑法"
+      ]
+    },
+    {
+      "id": "qishang_quan",
+      "name": "七伤拳",
+      "type": "fist",
+      "tier": "A",
+      "score": 85,
+      "source": "崆峒派",
+      "desc": "崆峒派绝学，一拳之中蕴含七种不同劲道。",
+      "tech": [
+        "七伤劲"
+      ]
+    },
+    {
+      "id": "long_zhao_shou",
+      "name": "龙爪手",
+      "type": "finger",
+      "tier": "A",
+      "score": 84,
+      "source": "少林寺",
+      "desc": "少林七十二绝技之一，手指坚硬如铁。",
+      "tech": [
+        "龙爪手十二式"
+      ]
+    },
+    {
+      "id": "xuantian_shenjian",
+      "name": "玄冥神掌",
+      "type": "palm",
+      "tier": "A",
+      "score": 85,
+      "source": "玄冥谷",
+      "desc": "玄冥谷绝学，掌力极寒，寒毒入体难除。",
+      "tech": [
+        "玄冥寒掌"
+      ]
+    },
+    {
+      "id": "hanbing_mianzhang",
+      "name": "寒冰绵掌",
+      "type": "palm",
+      "tier": "A",
+      "score": 83,
+      "source": "武当派",
+      "desc": "武当派阴柔掌法，掌力阴寒。",
+      "tech": [
+        "寒冰绵掌"
+      ]
+    },
+    {
+      "id": "shentong_gong",
+      "name": "神照功",
+      "type": "neiqi",
+      "tier": "A",
+      "score": 86,
+      "source": "连城诀",
+      "desc": "连城诀中无上内功，大成可枯木生花。",
+      "tech": [
+        "神照真气"
+      ]
+    },
+    {
+      "id": "xuantie_jianfa",
+      "name": "玄铁剑法",
+      "type": "sword",
+      "tier": "A",
+      "score": 85,
+      "source": "神雕侠侣",
+      "desc": "杨过所修，以玄铁重剑施展，重剑无锋。",
+      "tech": [
+        "玄铁剑法"
+      ]
+    },
+    {
+      "id": "liancheng_jian",
+      "name": "连城剑法",
+      "type": "sword",
+      "tier": "A",
+      "score": 84,
+      "source": "连城诀",
+      "desc": "连城诀中所藏剑法，剑上喂有剧毒。",
+      "tech": [
+        "连城剑法"
+      ]
+    },
+    {
+      "id": "gaibang_dog",
+      "name": "打狗棒法",
+      "type": "staff",
+      "tier": "A",
+      "score": 86,
+      "source": "丐帮",
+      "desc": "丐帮镇帮之宝，共有三十六路棒法。",
+      "tech": [
+        "棒打狗头",
+        "恶犬拦路",
+        "拨狗朝天"
+      ]
+    },
+    {
+      "id": "luoying_shenjian",
+      "name": "落英神剑",
+      "type": "sword",
+      "tier": "A",
+      "score": 83,
+      "source": "桃花岛",
+      "desc": "桃花岛主黄药师所创，剑如落英缤纷。",
+      "tech": [
+        "落英神剑"
+      ]
+    },
+    {
+      "id": "yuxiao_jian",
+      "name": "玉萧剑法",
+      "type": "sword",
+      "tier": "A",
+      "score": 82,
+      "source": "桃花岛",
+      "desc": "桃花岛剑法，以玉萧为剑，剑萧合璧。",
+      "tech": [
+        "玉萧剑法"
+      ]
+    },
+    {
+      "id": "tielong_zhang",
+      "name": "铁掌功",
+      "type": "palm",
+      "tier": "A",
+      "score": 81,
+      "source": "铁掌帮",
+      "desc": "铁掌帮帮主裘千仞绝学，掌力雄浑。",
+      "tech": [
+        "铁掌"
+      ]
+    },
+    {
+      "id": "tiangaige_net",
+      "name": "天罗地网",
+      "type": "light",
+      "tier": "A",
+      "score": 82,
+      "source": "古墓派",
+      "desc": "古墓派轻功，在方寸之间闪转腾挪。",
+      "tech": [
+        "天罗地网势"
+      ]
+    },
+    {
+      "id": "shenxing_baiyue",
+      "name": "神行百变",
+      "type": "light",
+      "tier": "A",
+      "score": 83,
+      "source": "铁剑门",
+      "desc": "铁剑门轻功，共有一百零八种变化。",
+      "tech": [
+        "神行百变"
+      ]
+    },
+    {
+      "id": "tiyun_zong",
+      "name": "梯云纵",
+      "type": "light",
+      "tier": "A",
+      "score": 82,
+      "source": "武当派",
+      "desc": "武当派轻功，可借力使力，纵上高空。",
+      "tech": [
+        "梯云纵"
+      ]
+    },
+    {
+      "id": "mingyu_gong",
+      "name": "明玉功",
+      "type": "neiqi",
+      "tier": "A",
+      "score": 86,
+      "source": "移花宫",
+      "desc": "移花宫不传之秘，肌棱透明如玉，青春永驻。",
+      "tech": [
+        "明玉真气"
+      ]
+    },
+    {
+      "id": "jiayi_dafa",
+      "name": "嫁衣神功",
+      "type": "neiqi",
+      "tier": "A",
+      "score": 85,
+      "source": "铁血镖局",
+      "desc": "内功霸道，大成后需将功力转嫁他人。",
+      "tech": [
+        "嫁衣真气"
+      ]
+    },
+    {
+      "id": "wujue_shenfa",
+      "name": "五绝神功",
+      "type": "neiqi",
+      "tier": "A",
+      "score": 84,
+      "source": "五绝宫",
+      "desc": "集天下五位高手绝学于一身。",
+      "tech": [
+        "五绝内力"
+      ]
+    },
+    {
+      "id": "langjian",
+      "name": "浪翻云剑法",
+      "type": "sword",
+      "tier": "S",
+      "score": 90,
+      "source": "覆雨翻云",
+      "desc": "覆雨剑浪翻云所创，剑意如滔滔江水。",
+      "tech": [
+        "覆雨剑法"
+      ]
+    },
+    {
+      "id": "busi_yinf",
+      "name": "不死印",
+      "type": "neiqi",
+      "tier": "S",
+      "score": 88,
+      "source": "大唐双龙传",
+      "desc": "邪王石之轩所创，可借力打力。",
+      "tech": [
+        "不死印法"
+      ]
+    },
+    {
+      "id": "jiuzi_zhenyan",
+      "name": "九字真言",
+      "type": "special",
+      "tier": "A",
+      "score": 83,
+      "source": "寻秦记",
+      "desc": "源自道家，可激发人体潜能。",
+      "tech": [
+        "临",
+        "兵",
+        "斗",
+        "者",
+        "皆",
+        "阵",
+        "列",
+        "前",
+        "行"
+      ]
+    },
+    {
+      "id": "changsheng_jue",
+      "name": "长生诀",
+      "type": "neiqi",
+      "tier": "S",
+      "score": 87,
+      "source": "大唐双龙传",
+      "desc": "道家宝典，蕴含长生不老之秘。",
+      "tech": [
+        "长生诀"
+      ]
+    },
+    {
+      "id": "xixue_dafa",
+      "name": "吸星大法",
+      "type": "neiqi",
+      "tier": "A",
+      "score": 84,
+      "source": "笑傲江湖",
+      "desc": "源自北冥神功，可吸取他人内力。",
+      "tech": [
+        "吸星"
+      ]
+    },
+    {
+      "id": "huagong_dafa",
+      "name": "化功大法",
+      "type": "neiqi",
+      "tier": "A",
+      "score": 82,
+      "source": "星宿派",
+      "desc": "以剧毒化去他人内力的阴毒功法。",
+      "tech": [
+        "化功"
+      ]
+    },
+    {
+      "id": "zixia_gong",
+      "name": "紫霞神功",
+      "type": "neiqi",
+      "tier": "A",
+      "score": 84,
+      "source": "华山派",
+      "desc": "华山派镇派内功。",
+      "tech": [
+        "紫霞真气"
+      ]
+    },
+    {
+      "id": "hunyuan_gong",
+      "name": "混元功",
+      "type": "neiqi",
+      "tier": "A",
+      "score": 83,
+      "source": "华山派",
+      "desc": "华山派基础内功。",
+      "tech": [
+        "混元真气"
+      ]
+    },
+    {
+      "id": "badao_method",
+      "name": "血刀刀法",
+      "type": "saber",
+      "tier": "A",
+      "score": 83,
+      "source": "血刀门",
+      "desc": "血刀门绝学，刀法狠辣诡异。",
+      "tech": [
+        "血刀"
+      ]
+    },
+    {
+      "id": "hujia_dao",
+      "name": "胡家刀法",
+      "type": "saber",
+      "tier": "B",
+      "score": 75,
+      "source": "飞狐外传",
+      "desc": "胡家传家刀法。",
+      "tech": [
+        "胡家刀"
+      ]
+    },
+    {
+      "id": "miao_jia_sword",
+      "name": "苗家剑法",
+      "type": "sword",
+      "tier": "B",
+      "score": 74,
+      "source": "飞狐外传",
+      "desc": "苗家剑法，与胡家世代为敌。",
+      "tech": [
+        "苗家剑"
+      ]
+    },
+    {
+      "id": "wuhu_duanmen",
+      "name": "五虎断门刀",
+      "type": "saber",
+      "tier": "B",
+      "score": 72,
+      "source": "五虎门",
+      "desc": "五虎门刀法。",
+      "tech": [
+        "断门刀"
+      ]
+    },
+    {
+      "id": "kuangfeng_dao",
+      "name": "狂风刀法",
+      "type": "saber",
+      "tier": "B",
+      "score": 71,
+      "source": "狂风快刀门",
+      "desc": "刀如狂风。",
+      "tech": [
+        "狂风刀"
+      ]
+    },
+    {
+      "id": "qingcheng_jian",
+      "name": "青城剑法",
+      "type": "sword",
+      "tier": "C",
+      "score": 65,
+      "source": "青城派",
+      "desc": "青城派剑法。",
+      "tech": [
+        "青城剑法"
+      ]
+    },
+    {
+      "id": "hengshan_jian",
+      "name": "衡山剑法",
+      "type": "sword",
+      "tier": "C",
+      "score": 66,
+      "source": "衡山派",
+      "desc": "衡山派剑法。",
+      "tech": [
+        "衡山剑法"
+      ]
+    },
+    {
+      "id": "huashan_jian",
+      "name": "华山剑法",
+      "type": "sword",
+      "tier": "C",
+      "score": 65,
+      "source": "华山派",
+      "desc": "华山派剑法。",
+      "tech": [
+        "华山剑法"
+      ]
+    },
+    {
+      "id": "songshan_jian",
+      "name": "嵩山剑法",
+      "type": "sword",
+      "tier": "C",
+      "score": 66,
+      "source": "嵩山派",
+      "desc": "嵩山派剑法。",
+      "tech": [
+        "嵩山剑法"
+      ]
+    },
+    {
+      "id": "taishan_jian",
+      "name": "泰山剑法",
+      "type": "sword",
+      "tier": "C",
+      "score": 65,
+      "source": "泰山派",
+      "desc": "泰山派剑法。",
+      "tech": [
+        "泰山剑法"
+      ]
+    },
+    {
+      "id": "henshan_jian",
+      "name": "恒山剑法",
+      "type": "sword",
+      "tier": "C",
+      "score": 65,
+      "source": "恒山派",
+      "desc": "恒山派剑法。",
+      "tech": [
+        "恒山剑法"
+      ]
+    },
+    {
+      "id": "emei_jian",
+      "name": "峨嵋剑法",
+      "type": "sword",
+      "tier": "B",
+      "score": 74,
+      "source": "峨嵋派",
+      "desc": "峨嵋派剑法，轻柔并重。",
+      "tech": [
+        "峨嵋剑法"
+      ]
+    },
+    {
+      "id": "kunlun_jian",
+      "name": "昆仑剑法",
+      "type": "sword",
+      "tier": "B",
+      "score": 74,
+      "source": "昆仑派",
+      "desc": "昆仑派剑法，刚猛大气。",
+      "tech": [
+        "昆仑剑法"
+      ]
+    },
+    {
+      "id": "liangyi_jian",
+      "name": "两仪剑法",
+      "type": "sword",
+      "tier": "A",
+      "score": 82,
+      "source": "武当派",
+      "desc": "武当派进阶剑法。",
+      "tech": [
+        "两仪剑"
+      ]
+    },
+    {
+      "id": "qixing_jian",
+      "name": "七星剑法",
+      "type": "sword",
+      "tier": "B",
+      "score": 74,
+      "source": "武当派",
+      "desc": "武当七星剑阵剑法。",
+      "tech": [
+        "七星剑"
+      ]
+    },
+    {
+      "id": "baihuashengshi_quan",
+      "name": "百花错拳",
+      "type": "fist",
+      "tier": "A",
+      "score": 80,
+      "source": "红花会",
+      "desc": "袁士霄所创，招招不同。",
+      "tech": [
+        "百花错"
+      ]
+    },
+    {
+      "id": "huagu_mianzhang",
+      "name": "化骨绵掌",
+      "type": "palm",
+      "tier": "A",
+      "score": 80,
+      "source": "神龙岛",
+      "desc": "掌力阴柔，化骨入髓。",
+      "tech": [
+        "化骨绵"
+      ]
+    },
+    {
+      "id": "buyuxiang_gong",
+      "name": "捕雀功",
+      "type": "light",
+      "tier": "B",
+      "score": 75,
+      "source": "古墓派",
+      "desc": "古墓派轻功，可捉雀。",
+      "tech": [
+        "捕雀"
+      ]
+    },
+    {
+      "id": "yueyuan_jian",
+      "name": "越女剑法",
+      "type": "sword",
+      "tier": "A",
+      "score": 83,
+      "source": "春秋",
+      "desc": "春秋越女所创剑法，轻灵迅速。",
+      "tech": [
+        "越女剑法"
+      ]
+    },
+    {
+      "id": "jinshi_gang",
+      "name": "金钟罩",
+      "type": "defense",
+      "tier": "B",
+      "score": 75,
+      "source": "少林寺",
+      "desc": "少林横练护体神功。",
+      "tech": [
+        "金钟罩"
+      ]
+    },
+    {
+      "id": "tiebu_shan",
+      "name": "铁布衫",
+      "type": "defense",
+      "tier": "B",
+      "score": 73,
+      "source": "民间",
+      "desc": "民间横练护体功夫。",
+      "tech": [
+        "铁布衫"
+      ]
+    },
+    {
+      "id": "lingxu_step",
+      "name": "凌虚御风",
+      "type": "light",
+      "tier": "S",
+      "score": 89,
+      "source": "逍遥派",
+      "desc": "临空御风而行。",
+      "tech": [
+        "凌虚御风"
+      ]
+    },
+    {
+      "id": "jiuxiao_feng",
+      "name": "九霄风",
+      "type": "light",
+      "tier": "A",
+      "score": 84,
+      "source": "九霄派",
+      "desc": "御风而行。",
+      "tech": [
+        "九霄风"
+      ]
+    },
+    {
+      "id": "tianya_po",
+      "name": "天涯飘",
+      "type": "light",
+      "tier": "A",
+      "score": 85,
+      "source": "天涯海角阁",
+      "desc": "天涯海角阁轻功。",
+      "tech": [
+        "天涯飘"
+      ]
+    },
+    {
+      "id": "baifa_tianxuan",
+      "name": "太玄经",
+      "type": "neiqi",
+      "tier": "S",
+      "score": 90,
+      "source": "侠客行",
+      "desc": "侠客行神功，包罗万象。",
+      "tech": [
+        "太玄经"
+      ]
+    },
+    {
+      "id": "riyue_shengong",
+      "name": "日月神功",
+      "type": "neiqi",
+      "tier": "S",
+      "score": 89,
+      "source": "日月神教",
+      "desc": "日月神教镇教内功。",
+      "tech": [
+        "日月真气"
+      ]
+    },
+    {
+      "id": "dongfang_bu",
+      "name": "东方步",
+      "type": "light",
+      "tier": "S",
+      "score": 91,
+      "source": "日月神教",
+      "desc": "日月神教轻功。",
+      "tech": [
+        "东方步"
+      ]
+    },
+    {
+      "id": "wuxie_po",
+      "name": "无解剑",
+      "type": "sword",
+      "tier": "S",
+      "score": 92,
+      "source": "独孤求败",
+      "desc": "无解剑法，破尽天下。",
+      "tech": [
+        "无解剑"
+      ]
+    },
+    {
+      "id": "tianluo_diwan",
+      "name": "天罗地网",
+      "type": "light",
+      "tier": "A",
+      "score": 84,
+      "source": "古墓派",
+      "desc": "天罗地网加强版。",
+      "tech": [
+        "天罗力"
+      ]
+    },
+    {
+      "id": "qingyan_nian",
+      "name": "清宴拈",
+      "type": "finger",
+      "tier": "A",
+      "score": 83,
+      "source": "少林寺",
+      "desc": "少林拈花指法。",
+      "tech": [
+        "清宴拈"
+      ]
+    },
+    {
+      "id": "jiuxuan_jue",
+      "name": "九玄诀",
+      "type": "neiqi",
+      "tier": "A",
+      "score": 84,
+      "source": "道家",
+      "desc": "九转玄功。",
+      "tech": [
+        "九玄气"
+      ]
+    },
+    {
+      "id": "wuxiang_xuan",
+      "name": "无相玄",
+      "type": "neiqi",
+      "tier": "A",
+      "score": 84,
+      "source": "道家",
+      "desc": "道家无相功法。",
+      "tech": [
+        "无相玄气"
+      ]
+    },
+    {
+      "id": "liangyi_po",
+      "name": "两仪破",
+      "type": "palm",
+      "tier": "A",
+      "score": 84,
+      "source": "武当派",
+      "desc": "两仪化劲破敌。",
+      "tech": [
+        "两仪破"
+      ]
+    },
+    {
+      "id": "sanhuang_pian",
+      "name": "三皇剑",
+      "type": "sword",
+      "tier": "A",
+      "score": 85,
+      "source": "三皇门",
+      "desc": "三皇门镇派剑法。",
+      "tech": [
+        "三皇剑"
+      ]
+    },
+    {
+      "id": "wuxing_tian",
+      "name": "五行掌",
+      "type": "palm",
+      "tier": "A",
+      "score": 84,
+      "source": "五行门",
+      "desc": "五行门掌法。",
+      "tech": [
+        "五行掌"
+      ]
+    },
+    {
+      "id": "jiuxiao_piao",
+      "name": "九霄飘",
+      "type": "light",
+      "tier": "B",
+      "score": 72,
+      "source": "九霄派",
+      "desc": "九霄派轻功。",
+      "tech": [
+        "九霄飘"
+      ]
+    },
+    {
+      "id": "mingjiao_shenghuo",
+      "name": "明尊燃体",
+      "type": "defense",
+      "tier": "A",
+      "score": 84,
+      "source": "明教",
+      "desc": "明教圣火令护体。",
+      "tech": [
+        "圣火护体"
+      ]
+    },
+    {
+      "id": "jiuxiao_feng",
+      "name": "九霄风",
+      "type": "light",
+      "tier": "A",
+      "score": 84,
+      "source": "九霄派",
+      "desc": "御风而行。",
+      "tech": [
+        "九霄风"
+      ]
+    },
+    {
+      "id": "yuxiao_bian",
+      "name": "玉萧鞭",
+      "type": "staff",
+      "tier": "A",
+      "score": 83,
+      "source": "桃花岛",
+      "desc": "黄药师萧法。",
+      "tech": [
+        "玉萧鞭法"
+      ]
+    },
+    {
+      "id": "kongming_tui",
+      "name": "孔雀明王",
+      "type": "light",
+      "tier": "S",
+      "score": 88,
+      "source": "西域",
+      "desc": "孔雀翎轻功。",
+      "tech": [
+        "明王步"
+      ]
+    },
+    {
+      "id": "guimao_shenshe",
+      "name": "鬼猫身法",
+      "type": "light",
+      "tier": "B",
+      "score": 74,
+      "source": "星宿派",
+      "desc": "星宿派轻功。",
+      "tech": [
+        "鬼猫步"
+      ]
+    },
+    {
+      "id": "tianchi_guai",
+      "name": "天池怪侠",
+      "type": "neiqi",
+      "tier": "B",
+      "score": 75,
+      "source": "书剑恩仇录",
+      "desc": "天池怪侠所传。",
+      "tech": [
+        "怪侠内功"
+      ]
+    },
+    {
+      "id": "jinluobiaos",
+      "name": "金蛇剑法",
+      "type": "sword",
+      "tier": "B",
+      "score": 75,
+      "source": "碧血剑",
+      "desc": "金蛇郎君所创，剑走偏锋。",
+      "tech": [
+        "金蛇剑法"
+      ]
+    },
+    {
+      "id": "langya_shui",
+      "name": "浪沧水",
+      "type": "sword",
+      "tier": "A",
+      "score": 85,
+      "source": "高句丽",
+      "desc": "浪沧派剑法。",
+      "tech": [
+        "浪沧剑"
+      ]
+    },
+    {
+      "id": "yunzhong_song",
+      "name": "云中嵩",
+      "type": "light",
+      "tier": "B",
+      "score": 70,
+      "source": "云中子",
+      "desc": "云中子轻功。",
+      "tech": [
+        "云中步"
+      ]
+    },
+    {
+      "id": "taiping_jian",
+      "name": "太平剑",
+      "type": "sword",
+      "tier": "B",
+      "score": 72,
+      "source": "太平派",
+      "desc": "太平剑法。",
+      "tech": [
+        "太平剑"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://world_renderer_scene"]
+
+[ext_resource type="Script" path="res://scripts/world/world_renderer.gd" id="1"]
+
+[node name="WorldRenderer" type="Node2D"]
+script = ExtResource("1")
+render_scale = 4.0
+show_grid = false
+show_region_names = true
+show_paths = true

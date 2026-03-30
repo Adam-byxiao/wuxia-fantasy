@@ -1,0 +1,66 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scenes/ui/ui_controller.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/ui/inventory.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://scenes/ui/personal/personal_root.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://scenes/ui/quest_log.tscn" id="4"]
+[ext_resource type="PackedScene" path="res://scenes/ui/battle/battle_ui.tscn" id="5"]
+[ext_resource type="PackedScene" path="res://scenes/ui/battle/battle_result.tscn" id="6"]
+[ext_resource type="PackedScene" path="res://scenes/ui/common/dialog_panel.tscn" id="7"]
+
+[node name="UIController" type="CanvasLayer"]
+script = ExtResource("1")
+
+[node name="InventoryPanel" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PersonalPanel" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="QuestPanel" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BattleUIPanel" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BattleResultPanel" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DialogPanel" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2

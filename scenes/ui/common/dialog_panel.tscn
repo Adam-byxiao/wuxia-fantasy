@@ -1,0 +1,38 @@
+[gd_scene format=3]
+
+[node name="DialogPanel" type="PanelContainer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.0
+offset_top = -150.0
+offset_right = 300.0
+offset_bottom = 150.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBox" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="NPCName" type="Label" parent="VBox"]
+layout_mode = 2
+text = "NPC名称"
+horizontal_alignment = 1
+
+[node name="Separator" type="HSeparator" parent="VBox"]
+layout_mode = 2
+
+[node name="DialogText" type="RichTextLabel" parent="VBox"]
+custom_minimum_size = Vector2(580, 200)
+layout_mode = 2
+size_flags_vertical = 3
+text = "对话内容..."
+
+[node name="Options" type="VBoxContainer" parent="VBox"]
+layout_mode = 2
+
+[node name="CloseBtn" type="Button" parent="VBox"]
+layout_mode = 2
+text = "关闭"

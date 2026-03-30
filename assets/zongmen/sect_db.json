@@ -1,0 +1,949 @@
+{
+  "meta": {
+    "name": "青云派",
+    "founded": "北宋末年",
+    "location": "江西庐山青云峰",
+    "slogan": "剑胆琴心，侠义为先",
+    "total_members": 136
+  },
+  "tiers": {
+    "SS": "绝顶高手",
+    "S": "一流高手",
+    "A": "二流高手",
+    "B": "三流高手",
+    "C": "四流高手",
+    "D": "末流"
+  },
+  "generation_1": {
+    "desc": "创派元老，皆为师祖辈",
+    "count": 13,
+    "members": [
+      {
+        "id": "g1_001",
+        "name": "天机子",
+        "title": "太上长老",
+        "nickname": "武林神话",
+        "gender": "男",
+        "age": 118,
+        "position": "太上长老",
+        "is_strongest": true,
+        "tier": "SS",
+        "cultivation": "青云内功化境",
+        "martial_arts": [
+          "青云剑诀",
+          "天机指",
+          "凌空点穴"
+        ],
+        "weapons": [
+          "天机剑"
+        ],
+        "personality": "深藏不露，睿智通达",
+        "background": "青云派创派祖师的小师弟，当今武林辈分最高之人。五十年前已是天下第一高手。",
+        "master_id": null
+      },
+      {
+        "id": "g1_002",
+        "name": "藏经子",
+        "title": "传功长老",
+        "nickname": "活武库",
+        "gender": "男",
+        "age": 105,
+        "position": "传功长老",
+        "is_strongest": false,
+        "tier": "S",
+        "cultivation": "藏经阁心法大成",
+        "martial_arts": [
+          "藏经阁心法",
+          "博览众长"
+        ],
+        "weapons": [
+          "无"
+        ],
+        "personality": "博学多才，和蔼可亲",
+        "background": "掌管藏经阁，收藏天下武学典籍。年轻时走遍大江南北，从无败绩。",
+        "master_id": null
+      },
+      {
+        "id": "g1_003",
+        "name": "铁面子",
+        "title": "执法长老",
+        "nickname": "铁面判官",
+        "gender": "男",
+        "age": 98,
+        "position": "执法长老",
+        "is_strongest": false,
+        "tier": "S",
+        "cultivation": "铁袖功大成",
+        "martial_arts": [
+          "铁袖功",
+          "天罗地网"
+        ],
+        "weapons": [
+          "铁面令牌"
+        ],
+        "personality": "铁面无私，冷酷无情",
+        "background": "专门处理门派叛徒与外敌入侵，手中铁面令牌一出，无人敢违。",
+        "master_id": null
+      },
+      {
+        "id": "g1_004",
+        "name": "逍遥子",
+        "title": "长老",
+        "nickname": "逍遥散人",
+        "gender": "男",
+        "age": 112,
+        "position": "普通长老",
+        "is_strongest": false,
+        "tier": "S",
+        "cultivation": "逍遥游大成",
+        "martial_arts": [
+          "逍遥游",
+          "凌虚步"
+        ],
+        "weapons": [
+          "无"
+        ],
+        "personality": "放浪不羁，游戏人间",
+        "background": "常年云游天下，很少过问门派事务。",
+        "master_id": null
+      },
+      {
+        "id": "g1_005",
+        "name": "烈阳子",
+        "title": "长老",
+        "nickname": "烈阳剑客",
+        "gender": "男",
+        "age": 95,
+        "position": "普通长老",
+        "is_strongest": false,
+        "tier": "S",
+        "cultivation": "烈阳剑诀大成",
+        "martial_arts": [
+          "烈阳剑诀",
+          "大日剑"
+        ],
+        "weapons": [
+          "烈阳剑"
+        ],
+        "personality": "刚正不阿，嫉恶如仇",
+        "background": "镇守门派剑阁，擅长阳刚类剑法。",
+        "master_id": null
+      },
+      {
+        "id": "g1_006",
+        "name": "玄阴子",
+        "title": "长老",
+        "nickname": "玄阴仙子",
+        "gender": "女",
+        "age": 91,
+        "position": "普通长老",
+        "is_strongest": false,
+        "tier": "S",
+        "cultivation": "玄阴剑诀大成",
+        "martial_arts": [
+          "玄阴剑诀",
+          "玄阴指"
+        ],
+        "weapons": [
+          "玄阴剑"
+        ],
+        "personality": "冷若冰霜，不苟言笑",
+        "background": "镇守门派暗器堂，擅长阴柔类暗器。",
+        "master_id": null
+      },
+      {
+        "id": "g1_007",
+        "name": "奇门子",
+        "title": "长老",
+        "nickname": "阵法鬼才",
+        "gender": "男",
+        "age": 103,
+        "position": "普通长老",
+        "is_strongest": false,
+        "tier": "S",
+        "cultivation": "奇门遁甲大成",
+        "martial_arts": [
+          "奇门遁甲",
+          "八卦阵"
+        ],
+        "weapons": [
+          "无"
+        ],
+        "personality": "精于算计，料事如神",
+        "background": "掌管门派机关阵法，阵法一道当世无敌。",
+        "master_id": null
+      },
+      {
+        "id": "g1_008",
+        "name": "铸剑子",
+        "title": "长老",
+        "nickname": "神铸剑师",
+        "gender": "男",
+        "age": 108,
+        "position": "普通长老",
+        "is_strongest": false,
+        "tier": "S",
+        "cultivation": "铸剑心法大成",
+        "martial_arts": [
+          "铸剑心法",
+          "铸剑术"
+        ],
+        "weapons": [
+          "无"
+        ],
+        "personality": "沉默寡言，一心扑在铸剑上",
+        "background": "门派神兵大多出自其手。",
+        "master_id": null
+      },
+      {
+        "id": "g1_009",
+        "name": "药篮子",
+        "title": "长老",
+        "nickname": "在世华佗",
+        "gender": "男",
+        "age": 100,
+        "position": "普通长老",
+        "is_strongest": false,
+        "tier": "S",
+        "cultivation": "药王心法大成",
+        "martial_arts": [
+          "药王心法",
+          "九转还魂针"
+        ],
+        "weapons": [
+          "药葫芦"
+        ],
+        "personality": "医者仁心，悬壶济世",
+        "background": "医术通神，炼制无数灵丹妙药。",
+        "master_id": null
+      },
+      {
+        "id": "g1_010",
+        "name": "禅心子",
+        "title": "长老",
+        "nickname": "武禅合一",
+        "gender": "男",
+        "age": 96,
+        "position": "普通长老",
+        "is_strongest": false,
+        "tier": "S",
+        "cultivation": "禅武心法大成",
+        "martial_arts": [
+          "禅武心法",
+          "一指禅",
+          "金刚掌"
+        ],
+        "weapons": [
+          "禅杖"
+        ],
+        "personality": "慈悲为怀，武艺高强",
+        "background": "年轻时曾入佛门修行二十年，后还俗入青云派。",
+        "master_id": null
+      },
+      {
+        "id": "g1_011",
+        "name": "剑痴子",
+        "title": "长老",
+        "nickname": "剑痴",
+        "gender": "男",
+        "age": 92,
+        "position": "普通长老",
+        "is_strongest": false,
+        "tier": "S",
+        "cultivation": "万剑归宗大成",
+        "martial_arts": [
+          "万剑归宗",
+          "天外飞仙"
+        ],
+        "weapons": [
+          "本命剑"
+        ],
+        "personality": "痴迷剑道，不问世事",
+        "background": "一生钻研剑道，手中剑已入化境。",
+        "master_id": null
+      },
+      {
+        "id": "g1_012",
+        "name": "毒阎子",
+        "title": "长老",
+        "nickname": "毒手判官",
+        "gender": "男",
+        "age": 89,
+        "position": "普通长老",
+        "is_strongest": false,
+        "tier": "S",
+        "cultivation": "百毒心法大成",
+        "martial_arts": [
+          "百毒心法",
+          "无形毒针"
+        ],
+        "weapons": [
+          "毒囊"
+        ],
+        "personality": "阴狠毒辣，但有原则",
+        "background": "用毒解毒皆为当世一绝。专门负责门派暗处事务。",
+        "master_id": null
+      },
+      {
+        "id": "g1_013",
+        "name": "读心子",
+        "title": "长老",
+        "nickname": "读心圣手",
+        "gender": "女",
+        "age": 88,
+        "position": "普通长老",
+        "is_strongest": false,
+        "tier": "S",
+        "cultivation": "读心术大成",
+        "martial_arts": [
+          "读心术",
+          "他心通"
+        ],
+        "weapons": [
+          "无"
+        ],
+        "personality": "洞察人心，温和睿智",
+        "background": "擅长心理洞察与审讯，暗影堂的真正幕后支柱。",
+        "master_id": null
+      }
+    ]
+  },
+  "generation_2": {
+    "desc": "掌门与六堂，皆为师叔辈",
+    "count": 32,
+    "sect_master": {
+      "id": "g2_001",
+      "name": "青云子",
+      "title": "掌门",
+      "nickname": "青云剑侠",
+      "gender": "男",
+      "age": 68,
+      "position": "掌门",
+      "tier": "SS",
+      "cultivation": "青云内功大成",
+      "martial_arts": [
+        "青云剑诀",
+        "天机剑法",
+        "青云掌"
+      ],
+      "weapons": [
+        "青云剑"
+      ],
+      "personality": "雄才大略，温文尔雅",
+      "background": "太上长老嫡传弟子，三十年前接任掌门，励精图治。",
+      "master_id": "g1_001"
+    },
+    "halls": [
+      {
+        "id": "g2_002",
+        "name": "清松子",
+        "title": "武学堂主",
+        "nickname": "武道宗师",
+        "gender": "男",
+        "age": 62,
+        "position": "武学堂主",
+        "tier": "S",
+        "cultivation": "武当心法大成",
+        "martial_arts": [
+          "武当心法",
+          "太极拳",
+          "太极剑"
+        ],
+        "weapons": [
+          "太极剑"
+        ],
+        "personality": "严师出高徒",
+        "master_id": "g1_002",
+        "uncle_count": 5,
+        "uncles": [
+          {
+            "id": "g2_002a",
+            "name": "松云师叔",
+            "age": 58,
+            "specialty": "少林系武学",
+            "tier": "A"
+          },
+          {
+            "id": "g2_002b",
+            "name": "松石师叔",
+            "age": 55,
+            "specialty": "峨眉系武学",
+            "tier": "A"
+          },
+          {
+            "id": "g2_002c",
+            "name": "松泉师叔",
+            "age": 52,
+            "specialty": "昆仑系武学",
+            "tier": "A"
+          },
+          {
+            "id": "g2_002d",
+            "name": "松风师叔",
+            "age": 49,
+            "specialty": "内功心法",
+            "tier": "A"
+          },
+          {
+            "id": "g2_002e",
+            "name": "松林师叔",
+            "age": 46,
+            "specialty": "轻功身法",
+            "tier": "A"
+          }
+        ]
+      },
+      {
+        "id": "g2_003",
+        "name": "清珍子",
+        "title": "藏宝堂堂主",
+        "nickname": "紫虚仙子",
+        "gender": "女",
+        "age": 60,
+        "position": "藏宝堂堂主",
+        "tier": "S",
+        "cultivation": "纳虚心法大成",
+        "martial_arts": [
+          "纳虚心法",
+          "袖里乾坤"
+        ],
+        "weapons": [
+          "无"
+        ],
+        "personality": "细心持家",
+        "master_id": "g1_008",
+        "uncle_count": 4,
+        "uncles": [
+          {
+            "id": "g2_003a",
+            "name": "清莲师叔",
+            "age": 55,
+            "specialty": "药材鉴别",
+            "tier": "A"
+          },
+          {
+            "id": "g2_003b",
+            "name": "清荷师叔",
+            "age": 52,
+            "specialty": "丹药配制",
+            "tier": "A"
+          },
+          {
+            "id": "g2_003c",
+            "name": "清兰师叔",
+            "age": 49,
+            "specialty": "法器保养",
+            "tier": "B"
+          },
+          {
+            "id": "g2_003d",
+            "name": "清竹师叔",
+            "age": 46,
+            "specialty": "账目录入",
+            "tier": "B"
+          }
+        ]
+      },
+      {
+        "id": "g2_004",
+        "name": "清兵器",
+        "title": "兵器堂堂主",
+        "nickname": "神兵阁主",
+        "gender": "男",
+        "age": 63,
+        "position": "兵器堂堂主",
+        "tier": "S",
+        "cultivation": "铸魂心法大成",
+        "martial_arts": [
+          "铸魂心法",
+          "铸剑秘法",
+          "铭纹术"
+        ],
+        "weapons": [
+          "锻造锤"
+        ],
+        "personality": "沉默寡言",
+        "master_id": "g1_008",
+        "uncle_count": 5,
+        "uncles": [
+          {
+            "id": "g2_004a",
+            "name": "清火师叔",
+            "age": 58,
+            "specialty": "火焰控制",
+            "tier": "A"
+          },
+          {
+            "id": "g2_004b",
+            "name": "清金师叔",
+            "age": 55,
+            "specialty": "金属冶炼",
+            "tier": "A"
+          },
+          {
+            "id": "g2_004c",
+            "name": "清锋师叔",
+            "age": 52,
+            "specialty": "剑刃锻造",
+            "tier": "B"
+          },
+          {
+            "id": "g2_004d",
+            "name": "清柔师叔",
+            "age": 49,
+            "specialty": "软兵锻造",
+            "tier": "B"
+          },
+          {
+            "id": "g2_004e",
+            "name": "清刚师叔",
+            "age": 46,
+            "specialty": "重兵锻造",
+            "tier": "B"
+          }
+        ]
+      },
+      {
+        "id": "g2_005",
+        "name": "清影子",
+        "title": "暗影堂堂主",
+        "nickname": "暗夜之王",
+        "gender": "男",
+        "age": 59,
+        "position": "暗影堂堂主",
+        "tier": "S",
+        "cultivation": "幽冥心法大成",
+        "martial_arts": [
+          "幽冥心法",
+          "潜行术",
+          "暗杀剑"
+        ],
+        "weapons": [
+          "软剑"
+        ],
+        "personality": "神秘莫测",
+        "master_id": "g1_003",
+        "uncle_count": 6,
+        "uncles": [
+          {
+            "id": "g2_005a",
+            "name": "清隐师叔",
+            "age": 55,
+            "specialty": "伪装潜伏",
+            "tier": "A"
+          },
+          {
+            "id": "g2_005b",
+            "name": "清踪师叔",
+            "age": 52,
+            "specialty": "追踪术",
+            "tier": "A"
+          },
+          {
+            "id": "g2_005c",
+            "name": "清谍师叔",
+            "age": 49,
+            "specialty": "情报收集",
+            "tier": "A"
+          },
+          {
+            "id": "g2_005d",
+            "name": "清谋师叔",
+            "age": 46,
+            "specialty": "谋略分析",
+            "tier": "A"
+          },
+          {
+            "id": "g2_005e",
+            "name": "清毒师叔",
+            "age": 43,
+            "specialty": "毒术暗杀",
+            "tier": "B"
+          },
+          {
+            "id": "g2_005f",
+            "name": "清音师叔",
+            "age": 40,
+            "specialty": "音律传讯",
+            "tier": "B"
+          }
+        ]
+      },
+      {
+        "id": "g2_006",
+        "name": "清律子",
+        "title": "戒律堂堂主",
+        "nickname": "赏善罚恶使",
+        "gender": "男",
+        "age": 61,
+        "position": "戒律堂堂主",
+        "tier": "S",
+        "cultivation": "戒律心法大成",
+        "martial_arts": [
+          "戒律心法",
+          "正气剑",
+          "降魔剑"
+        ],
+        "weapons": [
+          "戒律剑"
+        ],
+        "personality": "公正不阿",
+        "master_id": "g1_003",
+        "uncle_count": 4,
+        "uncles": [
+          {
+            "id": "g2_006a",
+            "name": "清善师叔",
+            "age": 56,
+            "specialty": "事务审核",
+            "tier": "A"
+          },
+          {
+            "id": "g2_006b",
+            "name": "清恶师叔",
+            "age": 53,
+            "specialty": "叛徒追捕",
+            "tier": "A"
+          },
+          {
+            "id": "g2_006c",
+            "name": "清平师叔",
+            "age": 50,
+            "specialty": "纷争调解",
+            "tier": "B"
+          },
+          {
+            "id": "g2_006d",
+            "name": "清威师叔",
+            "age": 47,
+            "specialty": "刑罚执行",
+            "tier": "B"
+          }
+        ]
+      },
+      {
+        "id": "g2_007",
+        "name": "清涉外子",
+        "title": "外务堂堂主",
+        "nickname": "外交天使",
+        "gender": "女",
+        "age": 58,
+        "position": "外务堂堂主",
+        "tier": "S",
+        "cultivation": "八面玲珑心法大成",
+        "martial_arts": [
+          "八面玲珑心法",
+          "和光同尘",
+          "化骨绵掌"
+        ],
+        "weapons": [
+          "无"
+        ],
+        "personality": "八面玲珑",
+        "master_id": "g1_013",
+        "uncle_count": 6,
+        "uncles": [
+          {
+            "id": "g2_007a",
+            "name": "清使师叔",
+            "age": 54,
+            "specialty": "出使谈判",
+            "tier": "A"
+          },
+          {
+            "id": "g2_007b",
+            "name": "清礼师叔",
+            "age": 51,
+            "specialty": "礼宾接待",
+            "tier": "A"
+          },
+          {
+            "id": "g2_007c",
+            "name": "清文师叔",
+            "age": 48,
+            "specialty": "文书往来",
+            "tier": "B"
+          },
+          {
+            "id": "g2_007d",
+            "name": "清武师叔",
+            "age": 45,
+            "specialty": "武力威慑",
+            "tier": "B"
+          },
+          {
+            "id": "g2_007e",
+            "name": "清商师叔",
+            "age": 42,
+            "specialty": "商贸往来",
+            "tier": "B"
+          },
+          {
+            "id": "g2_007f",
+            "name": "清客师叔",
+            "age": 39,
+            "specialty": "宾客安排",
+            "tier": "C"
+          }
+        ]
+      }
+    ]
+  },
+  "generation_3": {
+    "desc": "嫡传弟子，皆为师兄弟辈",
+    "count": 91,
+    "disciples": [
+      {
+        "id": "g3_001",
+        "name": "青松",
+        "title": "掌门首徒",
+        "nickname": "小剑侠",
+        "gender": "男",
+        "age": 38,
+        "tier": "A",
+        "cultivation": "青云内功小成",
+        "martial_arts": [
+          "青云剑诀"
+        ],
+        "weapons": [
+          "银霜剑"
+        ],
+        "position": "掌门继承人",
+        "is_heir": true,
+        "is_sect_master_heir": true,
+        "master_id": "g2_001"
+      },
+      {
+        "id": "g3_002",
+        "name": "青云",
+        "title": "掌门二徒",
+        "gender": "男",
+        "age": 35,
+        "tier": "B",
+        "master_id": "g2_001"
+      },
+      {
+        "id": "g3_003",
+        "name": "青峰",
+        "title": "掌门三徒",
+        "gender": "男",
+        "age": 32,
+        "tier": "B",
+        "master_id": "g2_001"
+      },
+      {
+        "id": "g3_004",
+        "name": "青岩",
+        "title": "武学堂首徒",
+        "nickname": "武痴",
+        "gender": "男",
+        "age": 42,
+        "tier": "A",
+        "cultivation": "武当心法大成",
+        "position": "武学堂继承人",
+        "is_heir": true,
+        "master_id": "g2_002"
+      },
+      {
+        "id": "g3_005",
+        "name": "青德",
+        "title": "武学堂弟子",
+        "gender": "男",
+        "age": 35,
+        "tier": "B",
+        "master_id": "g2_002"
+      },
+      {
+        "id": "g3_006",
+        "name": "青理",
+        "title": "武学堂弟子",
+        "gender": "男",
+        "age": 32,
+        "tier": "B",
+        "master_id": "g2_002"
+      },
+      {
+        "id": "g3_007",
+        "name": "青法",
+        "title": "武学堂弟子",
+        "gender": "男",
+        "age": 29,
+        "tier": "C",
+        "master_id": "g2_002"
+      },
+      {
+        "id": "g3_008",
+        "name": "青柔",
+        "title": "武学堂弟子",
+        "gender": "男",
+        "age": 26,
+        "tier": "C",
+        "master_id": "g2_002"
+      },
+      {
+        "id": "g3_009",
+        "name": "青玉",
+        "title": "藏宝堂首徒",
+        "nickname": "藏宝真人",
+        "gender": "女",
+        "age": 36,
+        "tier": "A",
+        "cultivation": "纳虚心法大成",
+        "position": "藏宝堂继承人",
+        "is_heir": true,
+        "master_id": "g2_003"
+      },
+      {
+        "id": "g3_010",
+        "name": "青珍",
+        "title": "藏宝堂弟子",
+        "gender": "女",
+        "age": 31,
+        "tier": "B",
+        "master_id": "g2_003"
+      },
+      {
+        "id": "g3_011",
+        "name": "青宝",
+        "title": "藏宝堂弟子",
+        "gender": "女",
+        "age": 28,
+        "tier": "C",
+        "master_id": "g2_003"
+      },
+      {
+        "id": "g3_012",
+        "name": "青锋",
+        "title": "兵器堂首徒",
+        "nickname": "小铸剑师",
+        "gender": "男",
+        "age": 40,
+        "tier": "A",
+        "cultivation": "铸魂心法大成",
+        "position": "兵器堂继承人",
+        "is_heir": true,
+        "master_id": "g2_004"
+      },
+      {
+        "id": "g3_013",
+        "name": "青刃",
+        "title": "兵器堂弟子",
+        "gender": "男",
+        "age": 33,
+        "tier": "B",
+        "master_id": "g2_004"
+      },
+      {
+        "id": "g3_014",
+        "name": "青刚",
+        "title": "兵器堂弟子",
+        "gender": "男",
+        "age": 30,
+        "tier": "C",
+        "master_id": "g2_004"
+      },
+      {
+        "id": "g3_015",
+        "name": "青影",
+        "title": "暗影堂首徒",
+        "nickname": "影子",
+        "gender": "男",
+        "age": 37,
+        "tier": "A",
+        "cultivation": "幽冥心法大成",
+        "position": "暗影堂继承人",
+        "is_heir": true,
+        "master_id": "g2_005"
+      },
+      {
+        "id": "g3_016",
+        "name": "青潜",
+        "title": "暗影堂弟子",
+        "gender": "男",
+        "age": 32,
+        "tier": "B",
+        "master_id": "g2_005"
+      },
+      {
+        "id": "g3_017",
+        "name": "青踪",
+        "title": "暗影堂弟子",
+        "gender": "男",
+        "age": 29,
+        "tier": "B",
+        "master_id": "g2_005"
+      },
+      {
+        "id": "g3_018",
+        "name": "青谍",
+        "title": "暗影堂弟子",
+        "gender": "男",
+        "age": 26,
+        "tier": "C",
+        "master_id": "g2_005"
+      },
+      {
+        "id": "g3_019",
+        "name": "青义",
+        "title": "戒律堂首徒",
+        "nickname": "侠义客",
+        "gender": "男",
+        "age": 35,
+        "tier": "A",
+        "cultivation": "戒律心法大成",
+        "position": "戒律堂继承人",
+        "is_heir": true,
+        "master_id": "g2_006"
+      },
+      {
+        "id": "g3_020",
+        "name": "青善",
+        "title": "戒律堂弟子",
+        "gender": "男",
+        "age": 30,
+        "tier": "B",
+        "master_id": "g2_006"
+      },
+      {
+        "id": "g3_021",
+        "name": "青恶",
+        "title": "戒律堂弟子",
+        "gender": "男",
+        "age": 27,
+        "tier": "B",
+        "master_id": "g2_006"
+      },
+      {
+        "id": "g3_022",
+        "name": "青和",
+        "title": "外务堂首徒",
+        "nickname": "和事佬",
+        "gender": "女",
+        "age": 33,
+        "tier": "A",
+        "cultivation": "八面玲珑心法大成",
+        "position": "外务堂继承人",
+        "is_heir": true,
+        "master_id": "g2_007"
+      },
+      {
+        "id": "g3_023",
+        "name": "青礼",
+        "title": "外务堂弟子",
+        "gender": "女",
+        "age": 28,
+        "tier": "B",
+        "master_id": "g2_007"
+      },
+      {
+        "id": "g3_024",
+        "name": "青文",
+        "title": "外务堂弟子",
+        "gender": "男",
+        "age": 25,
+        "tier": "C",
+        "master_id": "g2_007"
+      }
+    ]
+  }
+}

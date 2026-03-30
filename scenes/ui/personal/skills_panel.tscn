@@ -1,0 +1,54 @@
+[gd_scene format=3]
+
+[node name="SkillsPanel" type="HBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="LeftPanel" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(350, 0)
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Title" type="Label" parent="LeftPanel"]
+layout_mode = 2
+text = "已学技能"
+
+[node name="SkillsGrid" type="ScrollContainer" parent="LeftPanel"]
+custom_minimum_size = Vector2(0, 300)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="SkillsList" type="VBoxContainer" parent="LeftPanel/SkillsGrid"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 5
+
+[node name="EquipTitle" type="Label" parent="LeftPanel"]
+layout_mode = 2
+text = "已装备"
+
+[node name="EquipList" type="HBoxContainer" parent="LeftPanel"]
+layout_mode = 2
+
+[node name="RightPanel" type="VBoxContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 10
+
+[node name="SkillDetailTitle" type="Label" parent="RightPanel"]
+layout_mode = 2
+text = "技能详情"
+
+[node name="SkillDetailText" type="RichTextLabel" parent="RightPanel"]
+custom_minimum_size = Vector2(300, 280)
+layout_mode = 2
+size_flags_vertical = 3
+text = "选择一个技能查看详情"
+
+[node name="EquipBtn" type="Button" parent="RightPanel"]
+layout_mode = 2
+text = "装备"
+
+[node name="UnequipBtn" type="Button" parent="RightPanel"]
+layout_mode = 2
+text = "卸下"

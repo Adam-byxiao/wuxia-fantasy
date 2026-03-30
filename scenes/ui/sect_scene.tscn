@@ -1,0 +1,65 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scenes/ui/sect_scene.gd" id="1"]
+
+[node name="SectScene" type="PanelContainer"]
+script = ExtResource("1")
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = -200.0
+offset_right = 250.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBox" type="VBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="Title" type="Label" parent="VBox"]
+layout_mode = 2
+horizontal_alignment = 1
+text = "宗门"
+
+[node name="SectInfo" type="VBoxContainer" parent="VBox"]
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="SectName" type="Label" parent="VBox/SectInfo"]
+layout_mode = 2
+text = "宗门名: 无"
+
+[node name="SectLevel" type="Label" parent="VBox/SectInfo"]
+layout_mode = 2
+text = "宗门等级: 1"
+
+[node name="MemberCount" type="Label" parent="VBox/SectInfo"]
+layout_mode = 2
+text = "成员数量: 0"
+
+[node name="SectFunds" type="Label" parent="VBox/SectInfo"]
+layout_mode = 2
+text = "宗门资金: 0"
+
+[node name="Separator" type="HSeparator" parent="VBox"]
+layout_mode = 2
+
+[node name="Actions" type="VBoxContainer" parent="VBox"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="ManageBtn" type="Button" parent="VBox/Actions"]
+layout_mode = 2
+text = "宗门管理"
+
+[node name="DonateBtn" type="Button" parent="VBox/Actions"]
+layout_mode = 2
+text = "捐献资金"
+
+[node name="LeaveBtn" type="Button" parent="VBox/Actions"]
+layout_mode = 2
+text = "离开"

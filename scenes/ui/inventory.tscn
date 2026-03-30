@@ -1,0 +1,106 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scenes/ui/inventory.gd" id="1"]
+
+[node name="InventoryPanel" type="PanelContainer"]
+script = ExtResource("1")
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 400.0
+grow_horizontal = 2
+
+[node name="Margin" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="HBox" type="HBoxContainer" parent="Margin"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="LeftPanel" type="VBoxContainer" parent="Margin/HBox"]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 10
+
+[node name="Title" type="Label" parent="Margin/HBox/LeftPanel"]
+layout_mode = 2
+text = "背包"
+
+[node name="CategoryTabs" type="HBoxContainer" parent="Margin/HBox/LeftPanel"]
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="TabAll" type="Button" parent="Margin/HBox/LeftPanel/CategoryTabs"]
+layout_mode = 2
+text = "全部"
+
+[node name="TabEquip" type="Button" parent="Margin/HBox/LeftPanel/CategoryTabs"]
+layout_mode = 2
+text = "装备"
+
+[node name="TabPill" type="Button" parent="Margin/HBox/LeftPanel/CategoryTabs"]
+layout_mode = 2
+text = "丹药"
+
+[node name="TabConsumable" type="Button" parent="Margin/HBox/LeftPanel/CategoryTabs"]
+layout_mode = 2
+text = "暗器"
+
+[node name="TabBook" type="Button" parent="Margin/HBox/LeftPanel/CategoryTabs"]
+layout_mode = 2
+text = "书籍"
+
+[node name="TabManual" type="Button" parent="Margin/HBox/LeftPanel/CategoryTabs"]
+layout_mode = 2
+text = "秘籍"
+
+[node name="TabQuest" type="Button" parent="Margin/HBox/LeftPanel/CategoryTabs"]
+layout_mode = 2
+text = "任务"
+
+[node name="TabOther" type="Button" parent="Margin/HBox/LeftPanel/CategoryTabs"]
+layout_mode = 2
+text = "其他"
+
+[node name="ItemGrid" type="GridContainer" parent="Margin/HBox/LeftPanel"]
+custom_minimum_size = Vector2(380, 300)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/h_separation = 10
+theme_override_constants/v_separation = 10
+columns = 5
+
+[node name="GoldLabel" type="Label" parent="Margin/HBox/LeftPanel"]
+layout_mode = 2
+text = "金币: 0"
+
+[node name="RightPanel" type="VBoxContainer" parent="Margin/HBox"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="ItemDetailTitle" type="Label" parent="Margin/HBox/RightPanel"]
+layout_mode = 2
+text = "物品详情"
+
+[node name="ItemDetailText" type="RichTextLabel" parent="Margin/HBox/RightPanel"]
+custom_minimum_size = Vector2(280, 200)
+layout_mode = 2
+size_flags_vertical = 3
+text = "选择一个物品查看详情"
+
+[node name="UseBtn" type="Button" parent="Margin/HBox/RightPanel"]
+layout_mode = 2
+text = "使用"
+
+[node name="DiscardBtn" type="Button" parent="Margin/HBox/RightPanel"]
+layout_mode = 2
+text = "丢弃"
+
+[node name="CloseBtn" type="Button" parent="Margin/HBox/RightPanel"]
+layout_mode = 2
+text = "关闭"

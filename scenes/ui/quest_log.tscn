@@ -1,0 +1,88 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scenes/ui/quest_log.gd" id="1"]
+
+[node name="QuestPanel" type="PanelContainer"]
+script = ExtResource("1")
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 450.0
+grow_horizontal = 2
+
+[node name="Margin" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBox" type="VBoxContainer" parent="Margin"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="TitleBar" type="HBoxContainer" parent="Margin/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Title" type="Label" parent="Margin/VBox/TitleBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "任务日志"
+
+[node name="CloseBtn" type="Button" parent="Margin/VBox/TitleBar"]
+layout_mode = 2
+text = "关闭"
+
+[node name="TabBar" type="HBoxContainer" parent="Margin/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="TabActive" type="Button" parent="Margin/VBox/TabBar"]
+layout_mode = 2
+text = "进行中"
+
+[node name="TabCompleted" type="Button" parent="Margin/VBox/TabBar"]
+layout_mode = 2
+text = "已完成"
+
+[node name="ContentArea" type="HBoxContainer" parent="Margin/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 20
+
+[node name="QuestList" type="ScrollContainer" parent="Margin/VBox/ContentArea"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+size_flags_horizontal = 2
+
+[node name="QuestListVBox" type="VBoxContainer" parent="Margin/VBox/ContentArea/QuestList"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 5
+
+[node name="EmptyHint" type="Label" parent="Margin/VBox/ContentArea/QuestList/QuestListVBox"]
+layout_mode = 2
+text = "暂无任务"
+
+[node name="QuestDetail" type="VBoxContainer" parent="Margin/VBox/ContentArea"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 10
+
+[node name="QuestTitle" type="Label" parent="Margin/VBox/ContentArea/QuestDetail"]
+layout_mode = 2
+text = "任务详情"
+
+[node name="QuestDesc" type="RichTextLabel" parent="Margin/VBox/ContentArea/QuestDetail"]
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 2
+size_flags_vertical = 3
+text = "选择一个任务查看详情"
+
+[node name="QuestObjectives" type="Label" parent="Margin/VBox/ContentArea/QuestDetail"]
+layout_mode = 2
+text = "目标:"
+
+[node name="QuestReward" type="Label" parent="Margin/VBox/ContentArea/QuestDetail"]
+layout_mode = 2
+text = "奖励:"

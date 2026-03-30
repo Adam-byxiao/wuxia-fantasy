@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://verify_npc"]
+
+[ext_resource type="Script" path="res://scenes/verification/verify_npc.gd" id="1"]
+
+[node name="VerifyNPC" type="Node2D"]
+script = ExtResource("1")
+
+[node name="BG" type="ColorRect" parent="."]
+offset_right = 1280.0
+offset_bottom = 720.0
+color = Color(0.05, 0.08, 0.08, 1)
+
+[node name="Title" type="Label" parent="."]
+offset_left = 20.0
+offset_top = 10.0
+offset_right = 600.0
+offset_bottom = 50.0
+theme_override_font_sizes/font_size = 32
+text = "[验证5] NPC AI系统测试"
+
+[node name="NPCDisplay" type="Label" parent="."]
+offset_left = 20.0
+offset_top = 60.0
+offset_right = 500.0
+offset_bottom = 400.0
+text = "[NPC状态]"
+
+[node name="TestLog" type="Label" parent="."]
+offset_left = 20.0
+offset_top = 420.0
+offset_right = 600.0
+offset_bottom = 620.0
+text = "[测试日志]"
+
+[node name="Controls" type="VBoxContainer" parent="."]
+offset_left = 700.0
+offset_top = 60.0
+offset_right = 900.0
+offset_bottom = 600.0
+
+[node name="AITypeDisplay" type="Label" parent="."]
+offset_left = 520.0
+offset_top = 60.0
+offset_right = 680.0
+offset_bottom = 400.0
+text = "[AI类型说明]
+PATROL=0 巡逻
+TRADER=1 商贩
+CULTIVATOR=2 修炼
+WANDERER=3 游荡
+GUARD=4 守卫
+QUEST=5 任务"
+
+[node name="BackInfo" type="Label" parent="."]
+offset_left = 20.0
+offset_top = 680.0
+offset_right = 600.0
+offset_bottom = 720.0
+text = "[按 ESC 返回] [SPACE 生成NPC] [F 模拟1天]"

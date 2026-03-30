@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://ddl6phprw8v35"]
+
+[ext_resource type="Script" uid="uid://csywgje47dk2" path="res://scripts/main.gd" id="1"]
+
+[node name="Main" type="Node2D" unique_id=1942517716]
+script = ExtResource("1")
+
+[node name="WorldLayer" type="Node2D" parent="." unique_id=1156102095]
+
+[node name="UILayer" type="CanvasLayer" parent="." unique_id=1660283363]
+
+[node name="AutoRunner" type="Node" parent="." unique_id=1952996145]

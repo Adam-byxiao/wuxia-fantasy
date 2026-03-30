@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://testnpc001"]
+
+[ext_resource type="Script" path="res://scenes/entities/npc/test_npc.gd" id="1_scr"]
+[ext_resource type="Script" path="res://scripts/world/npc_manager.gd" id="2_mgr"]
+[ext_resource type="Script" path="res://scripts/world/time_manager.gd" id="3_time"]
+
+[node name="TestNPC" type="Node2D"]
+script = ExtResource("1_scr")
+
+[node name="TimeManager" type="Node" parent="."]
+script = ExtResource("3_time")
+
+[node name="NPCManager" type="Node" parent="."]
+script = ExtResource("2_mgr")

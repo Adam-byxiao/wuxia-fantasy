@@ -1,0 +1,127 @@
+class_name BattleManager
+extends Node
+
+signal battle_started
+signal battle_ended(victory: bool, rewards: Dictionary)
+signal turn_started(is_player_turn: bool)
+signal action_executed(actor_name: String, result: Dictionary)
+
+enum BattleState { IDLE, PLAYER_TURN, ENEMY_TURN, ANIMATING, ENDED }
+
+var state: BattleState = BattleState.IDLE
+var player: CombatUnit
+var enemies: Array[CombatUnit]
+var current_turn_index: int = 0
+var battle_log: Array[String] = []
+
+func start_battle(player_unit: CombatUnit, enemy_units: Array[CombatUnit]):
+    player = player_unit
+    enemies = enemy_units
+
+    for e in enemies:
+        e.is_player = false
+    player.is_player = true
+
+    battle_log.clear()
+    state = BattleState.PLAYER_TURN
+    battle_started.emit()
+    turn_started.emit(true)
+
+    # 按速度排序决定行动顺序
+    _sort_by_speed()
+
+func _sort_by_speed():
+    # 简单排序，所有单位混在一起按速度�?
+    pass
+
+func execute_player_action(skill_index: int, target_enemy_index: int) -> Dictionary:
+    if state != BattleState.PLAYER_TURN:
+        return {"success": false, "message": "不是玩�?回合"}
+
+    var skill = player.skills[skill_index] if skill_index < player.skills.size() else null
+    if skill == null:
+        return {"success": false, "message": "无效技�?"}
+
+    var target = enemies[target_enemy_index] if target_enemy_index < enemies.size() else null
+    if target == null or not target.is_alive:
+        return {"success": false, "message": "无效�?��"}
+
+    var result = skill.execute(target)
+    action_executed.emit(player.name, result)
+    battle_log.append(result["message"])
+
+    _check_battle_end()
+    if state != BattleState.ENDED:
+        _start_enemy_turn()
+
+    return result
+
+func execute_player_attack(target_enemy_index: int) -> Dictionary:
+    if state != BattleState.PLAYER_TURN:
+        return {"success": false, "message": "不是玩�?回合"}
+
+    var target = enemies[target_enemy_index]
+    var dmg = player.attack
+    var actual = target.take_damage(dmg)
+
+    var result = {
+        "success": true,
+        "damage": actual,
+        "message": "%s �?��攻�? %s，造成 %d 点伤�?" % [player.name, target.name, actual]
+    }
+
+    action_executed.emit(player.name, result)
+    battle_log.append(result["message"])
+
+    _check_battle_end()
+    if state != BattleState.ENDED:
+        _start_enemy_turn()
+
+    return result
+
+func _start_enemy_turn():
+    state = BattleState.ENEMY_TURN
+    turn_started.emit(false)
+
+    # 简单AI：每�?��着的敌人攻击玩�?
+    for enemy in enemies:
+        if enemy.is_alive:
+            var dmg = enemy.attack
+            var actual = player.take_damage(dmg)
+            var result_msg = "%s 攻击 %s，造成 %d 点伤�?" % [enemy.name, player.name, actual]
+            battle_log.append(result_msg)
+            action_executed.emit(enemy.name, {"damage": actual, "message": result_msg})
+
+            if not player.is_alive:
+                _end_battle(false)
+                return
+
+    state = BattleState.PLAYER_TURN
+    turn_started.emit(true)
+
+func use_item(item_index: int) -> Dictionary:
+    # 道具系统待接入，先返回占�?
+    return {"success": false, "message": "道具系统�?���?"}
+
+func try_escape() -> bool:
+    if state != BattleState.PLAYER_TURN:
+        return false
+    var rng = RandomNumberGenerator.new()
+    return rng.randf() < 0.5  # 50% 逃跑成功�?
+
+func _check_battle_end():
+    var all_enemies_dead = enemies.all(func(e): return not e.is_alive)
+    if all_enemies_dead:
+        _end_battle(true)
+    elif not player.is_alive:
+        _end_battle(false)
+
+func _end_battle(victory: bool):
+    state = BattleState.ENDED
+    var rewards = {}
+    if victory:
+        rewards = {
+            "exp": enemies.size() * 50,
+            "gold": enemies.size() * 20
+        }
+    battle_ended.emit(victory, rewards)
